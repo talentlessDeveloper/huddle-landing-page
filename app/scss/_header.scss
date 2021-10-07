@@ -1,0 +1,47 @@
+.header {
+  padding: 2rem 0;
+
+  @include breakpoint-desktop(medium) {
+    padding: 4.2rem 0;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.1rem;
+  }
+
+  &__logoBox {
+    margin: 0;
+  }
+
+  &__logo {
+    height: 1rem;
+    width: auto;
+
+    @include breakpoint-desktop(medium) {
+      height: 2.2rem;
+    }
+  }
+
+  &__btn {
+    background: transparent;
+    color: $pink;
+    font-family: inherit;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    border: none;
+    border: 1px solid $pink;
+    border-radius: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @include breakpoint-desktop(medium) {
+      font-size: 0.9rem;
+      padding: 0.65rem 1.75rem;
+    }
+  }
+}

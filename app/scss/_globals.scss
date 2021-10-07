@@ -1,0 +1,85 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: $veryDarkCyan;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  @include breakpoint-desktop(medium) {
+    font-size: 2.25rem;
+  }
+}
+
+p {
+  font-weight: 600;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  @include breakpoint-desktop(medium) {
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+}
+
+button {
+  background-color: $pink;
+  transition: 300ms;
+  cursor: pointer;
+  &:hover {
+    background-color: $lightPink;
+  }
+}
+
+.btn-getStarted {
+  color: $veryPaleBlue;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3.5rem;
+  box-shadow: 0 0.8rem 1rem -0.4rem rgba(0, 0, 0, 0.2);
+
+  @include breakpoint-desktop(medium) {
+    font-size: 1.2rem;
+    padding: 1.5rem 3.5rem;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+// .border-error {
+//   outline: 2px solid red;
+// }
+// .border-success {
+//   outline: 2px solid lightgreen;
+// }

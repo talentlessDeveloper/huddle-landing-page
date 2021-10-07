@@ -1,0 +1,8 @@
+.build {
+  padding: 4rem 3rem 6rem 3rem;
+  text-align: center;
+
+  @include breakpoint-desktop(medium) {
+    padding: 7rem 2rem;
+  }
+}

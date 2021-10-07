@@ -1,0 +1,85 @@
+.intro {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  text-align: center;
+
+  @include breakpoint-desktop(medium) {
+    margin-top: 8.5rem;
+    margin-bottom: 10rem;
+  }
+
+  &__text {
+    padding: 0 1.1rem;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint-desktop(medium) {
+      margin-bottom: 5.5rem;
+    }
+    @include breakpoint-desktop(large) {
+      padding: 0;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: $veryDarkCyan;
+      font-size: 0.9rem;
+      max-width: 37rem;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+
+      @include breakpoint-desktop(medium) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &__image {
+    margin-bottom: 5rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @include breakpoint-desktop(medium) {
+      flex-direction: row;
+    }
+
+    .stats2 {
+      p {
+        text-align: center;
+      }
+    }
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+
+      img {
+        height: 1.5rem;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 4rem;
+      }
+
+      p {
+        color: #98a2a8;
+
+        margin-top: -0.85rem;
+      }
+    }
+  }
+}
