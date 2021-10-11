@@ -26,12 +26,14 @@ h3 {
   margin-top: 0;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 1.5rem;
 }
 
 @media (min-width: 40em) {
-  h1 {
+  h1,
+  h2 {
     font-size: 2.25rem;
   }
 }
@@ -251,7 +253,7 @@ button:hover {
   height: 1.5rem;
 }
 
-.intro__stats figure h3 {
+.intro__stats figure h2 {
   margin: 0;
   font-size: 4rem;
 }
@@ -406,7 +408,7 @@ button:hover {
   }
 }
 
-.feature__text h1 {
+.feature__text h2 {
   margin-bottom: 0.25rem;
 }
 
@@ -491,7 +493,7 @@ button:hover {
   }
 }
 
-.info__subscribeBox h1 {
+.info__subscribeBox h2 {
   color: #fff;
   font-size: 1.5rem;
   margin-bottom: 0.35rem;
